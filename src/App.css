@@ -1,0 +1,8 @@
+@font-face {
+    font-family: vazirmatnn;
+    src: url(./assets/fonts/Vazirmatn-Regular.ttf);
+}
+body{
+    background-color: #F8F9FA!important;
+    font-family: vazirmatnn;
+}
