@@ -12,7 +12,7 @@ function Home() {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/courses')
+    axios.get('https://frontcast-api-db.onrender.com/courses')
       .then(response => setCourses(response.data))
       .catch(err => console.error("خطا در دریافت دوره‌ها:", err));
   }, []);
@@ -21,7 +21,7 @@ function Home() {
   const [comments , setComments] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:8000/comments')
+        axios.get('https://frontcast-api-cmjs.onrender.com/comments')
           .then(response => setComments(response.data))
           .catch(err => console.error("خطا در دریافت دوره‌ها:", err));
     }, []);

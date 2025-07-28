@@ -7,7 +7,7 @@ function AdminLogin() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    if (password === "123456") {
+    if (password === "12345678") {
       localStorage.setItem("isAdmin", true);
       navigate("/admin");
     } else {

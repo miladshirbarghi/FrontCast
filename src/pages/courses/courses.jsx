@@ -11,7 +11,7 @@ function Courses() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/courses')
+      .get('https://frontcast-api-db.onrender.com/courses')
       .then(response => {
         setCourses(response.data);
         setLoading(false);

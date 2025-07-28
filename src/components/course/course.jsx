@@ -11,9 +11,8 @@ function Course() {
   const [courseState, setCourseState] = useState({});
   const courseId = useParams().courseId;
   const { addToCart } = useContext(CartContext); 
-
   useEffect(() => {
-    axios.get(`http://localhost:5000/courses/${courseId}`)
+    axios.get(`https://frontcast-api-db.onrender.com/courses/${courseId}`)
       .then((response) => setCourseState(response.data));
   }, [courseId]);
 
