@@ -4,7 +4,7 @@ import axios from "axios";
 import { Container, Card, Button, Row, Col } from "react-bootstrap";
 import { FaClock, FaGraduationCap, FaMoneyBillAlt } from "react-icons/fa";
 import Footer from "../footer/footer";
-import { CartContext } from "../../context/CartContext"; // ✅ ایمپورت کانتکست
+import { CartContext } from "../../Context/CartContext"; // ✅ ایمپورت کانتکست
 import Swal from "sweetalert2";
 
 function Course() {

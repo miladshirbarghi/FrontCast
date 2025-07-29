@@ -8,16 +8,13 @@ import Blog from './pages/blog/blog';
 import Contact from './components/contact/contact';
 import Cart from './pages/cart/Cart'
 import AdminLogin from './pages/adminLogin/adminLogin';
-import Admin from './pages/admin/admin';
+import Admin from './pages/admin/Admin';
 import NavBar from './components/navbar/navBar';
-
 
 function PrivateRoute({ children }) {
   const isAdmin = localStorage.getItem("isAdmin");
   return isAdmin ? children : <Navigate to="/admin-login" />;
 }
-
-
 
 function App() {
   return (
